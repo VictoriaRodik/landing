@@ -7,49 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-    <header>
-        <img src="#" alt="content logo dark">
-        <button><img src="#" alt="mobile navbar"></button>
+    <header class="header-figma">
+        <nav class="header-figma__nav">
+
+            <div class="header-figma__menu">
+                <a href="#home" class="header-figma__menu-item">Home</a>
+                <a href="#product" class="header-figma__menu-item">Product</a>
+                <a href="#pricing" class="header-figma__menu-item">Pricing</a>
+                <a href="#about" class="header-figma__menu-item">About Us</a>
+                <a href="#contact" class="header-figma__menu-item">Contacts</a>
+            </div>
+            <div class="header-figma__logo-container">
+                <img src="img/figma-logo.svg" alt="Figma Land">
+            </div>
+            <div class="header-figma__social">
+                <a href="#"><img class="header-figma__social-icon" src="img/tw-icon.svg" alt="Twitter"></a>
+                <a href="#"><img class="header-figma__social-icon" src="img/fb-icon.svg" alt="Facebook"></a>
+                <a href="#"><img class="header-figma__social-icon" src="img/ln-icon.svg" alt="Linkedin"></a>
+            </div>
+            <div class="header-figma__title">
+                <h1 class="header-figma__title-text">The best products start with Figma</h1>
+                <p class="header-figma__title-text">Most calendars are designed for teams</p>
+                <button class="button-bold-text">Try for Free</button>
+            </div>
     </header>
     <main>
-        <div>
-            <h2>The best products start with Figma</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <button>Try for Free</button>
-        </div>
-        <div>
-            <h2>Features</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <video controls="">
-                <source src="#" type="video/mp4">
-            </video>
-        </div>
-        <div>
-            <img src="#" alt="drawing">
-            <h3>OpenType features Variable fonts</h3>
-            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-        </div>
-        <div>
-            <img src="#" alt="draw">
-            <h3>Design with real data</h3>
-            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-        </div>
-        <div>
-            <img src="#" alt="brush">
-            <h3>Fastetst way to take action</h3>
-            <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-        </div>
-        <div>
-            <h2>Fastets way to organize</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <button>Try for Free</button>
-        </div>
-        <div>
-            <img src="#" alt="screen">
-        </div>
+        <section id="product" class="main-text">
+            <h2 class="main-text__title">Features</h2>
+            <p class="main-text__text">Most calendars are designed for teams</p>
+            <div class="main-text__features">
+                <div class="main-text__features-item">
+                    <img src="img/shapes-icon.svg" alt="Drawing">
+                    <h3>OpenType features Variable fonts</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+                </div>
+                <div class="main-text__features-item">
+                    <img src="img/pencil-icon.svg" alt="Draw">
+                    <h3>Design with real data</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+                </div>
+                <div class="main-text__features-item">
+                    <img src="img/brush-icon.svg" alt="Brush">
+                    <h3>Fastetst way to take action</h3>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+                </div>
+            </div>
+            <img src="img/screen.png" alt="Screen">
+            <div>
+                <h2 class="main-text__title">Fastets way to organize</h2>
+                <p class="main-text__text">Most calendars are designed for teams</p>
+                <button class="button-bold-text">Try for Free</button>
+            </div>
+            <div>
+                <img src="#" alt="screen">
+            </div>
+        </section>
         <div>
             <p><span>At uour fingertips</span></p>
             <h2>Newsletter</h2>
