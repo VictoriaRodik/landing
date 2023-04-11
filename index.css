@@ -1,5 +1,5 @@
 .header-figma {
-    background-image: url(img/header-background.png), #222B32;
+    background: url(img/header-background.png), #222B32;
 }
 
 .button-bold-text {
