@@ -1,5 +1,13 @@
+* {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+}
+
 .header-figma {
-    background: url(img/header-background.png), #222B32;
+    background: url(img/header-background.png) no-repeat center center;
+      display: flex;
+ 
 }
 
 .button-bold-text {
@@ -19,4 +27,22 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+.header-figma {
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.header-figma__title {
+font-size: 48px;
+line-height: 55px;
+text-align: center;
+}
+.header-figma__title-text {
+font-size: 28px;
+line-height: 40px;
+text-align: center;
+}
+.header-figma__menu-item {
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
 }
