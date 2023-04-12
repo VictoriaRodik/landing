@@ -8,17 +8,19 @@
     <title>Landing</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
 </head>
 
 <body>
-    <header class="header-figma">
+    <header id="home" class="header-figma">
         <nav class="header-figma__nav">
-
             <div class="header-figma__menu">
                 <a href="#home" class="header-figma__menu-item">Home</a>
                 <a href="#product" class="header-figma__menu-item">Product</a>
                 <a href="#pricing" class="header-figma__menu-item">Pricing</a>
-                <a href="#about" class="header-figma__menu-item">About Us</a>
+                <a href="#about" class="header-figma__menu-item">About</a>
                 <a href="#contact" class="header-figma__menu-item">Contacts</a>
             </div>
             <div class="header-figma__logo-container">
@@ -29,12 +31,14 @@
                 <a href="#"><img class="header-figma__social-icon" src="img/fb-icon.svg" alt="Facebook"></a>
                 <a href="#"><img class="header-figma__social-icon" src="img/ln-icon.svg" alt="Linkedin"></a>
             </div>
-            <div class="header-figma__title">
-                <h1 class="header-figma__title">The best products start with Figma</h1>
-                <p class="header-figma__title-text">Most calendars are designed for teams</p>
-                <button class="button-bold-text">Try for Free</button>
-            </div>
         </nav>
+        <div class="header-figma__main">
+            <h1 class="header-figma__title">The best products start with Figma</h1>
+            <p class="header-figma__title-text">Most calendars are designed for teams</p>
+        </div>
+        <div class="header-figma__button">
+            <button class="button-main-text">Try for Free</button>
+        </div>
     </header>
     <main>
         <section id="product" class="main-text">
@@ -57,154 +61,175 @@
                     <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                 </div>
             </div>
-            <img src="img/screen.png" alt="Screen">
-            <div>
-                <h2 class="main-text__title">Fastets way to organize</h2>
-                <p class="main-text__text">Most calendars are designed for teams</p>
-                <button class="button-bold-text">Try for Free</button>
+            <div class="main-text__image">
+                <img src="img/screen.png" alt="Screen">
             </div>
-        </section>
+            <div class="call-to-action">
+                <div class="call-to-action__item">
+                    <h2 class="call-to-action__title">Fastets way to organize</h2>
+                    <p class="call-to-action__text">Most calendars are designed for teams</p>
+                    <button class="button-bold-text">Try for Free</button>
+                </div>
+                <div class="call-to-action__image">
+                    <img src="img/screen-mask.png" alt="Screen">
+                </div>
+            </div>
+          </section>
         <section class="main-text">
             <p class="main-text__text">At your fingertips</p>
             <h2 class="main-text__title">Newsletter</h2>
             <p class="main-text__text">Most calendars are designed for teams</p>
-            <p class="main-text__text">Slate helps you see how many more days you need to work to reach your financial goal</p>
+            <p class="main-text__text">Slate helps you see how many more days you need to work to reach your financial
+                goal</p>
             <div class="main-text__image">
                 <img src="img/newsletter.png" alt="Newsletter">
             </div>
-           
+
             <h3>Subscribe to our newsletter</h3>
-            <p>Available exclusivery on Figmaland</p>
-            <form>
+            <p class="main-text__text">Available exclusivery on Figmaland</p>
+            <form class="suscription">
                 <p><input type="email" name="email" placeholder="Your Email" required></p>
-                <p><input type="submit" value="Subscribe" class="button-bold-text"></p>
+                <p><input type="submit" value="Subscribe" class="button-main-text"></p>
             </form>
         </section>
-        <div>
-            <h2>Partners</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <h4>Slate is designed for freelance</h4>
-            <div>
-                <h6>Client name</h6>
-                <img src="#" alt="logos:google">
-            </div>
-            <div>
-                <h6>Client name</h6>
-                <img src="#" alt="logos:amazon">
-            </div>
-            <div>
-                <h6>Client name</h6>
-                <img src="#" alt="logos:microsoft">
+        <section class="main-text">
+            <h2 class="main-text__title">Partners</h2>
+            <p class="main-text__text">Most calendars are designed for teams</p>
+            <p class="main-text__text">Slate is designed for freelance</p>
+            <div class="main-text__partners gallery">
+                <div class="gallery__item">
+                    <p>Client name</p>
+                    <img src="img/logos-google.png" alt="logos:google">
+                </div>
+                <div class="gallery__item">
+                    <p>Client name</p>
+                    <img src="img/logos-amazon.png" alt="logos:amazon">
+                </div>
+                <div class="gallery__item">
+                    <p>Client name</p>
+                    <img src="img/logos-microsoft.png" alt="logos:microsoft">
+                </div>
+                <div class="gallery__item">
+                    <p>Client name</p>
+                    <img src="img/logos-uber.png" alt="logos:uber">
+                </div>
+                <div class="gallery__item">
+                    <p>Client name</p>
+                    <img src="img/logos-dropbox.png" alt="logos:dropbox">
+                </div>
             </div>
             <button class="button-bold-text">Try for Free</button>
-        </div>
-        <div>
-            <h2>Testimonials</h2>
-            <img src="#" alt="logos:ibm">
-            <h4>Most calendars are designed for teams</h4>
-            <img src="#" alt="avatar">
-            <h6>orginize across</h6>
-            <p><a href="#">Ui designer</a></p>
-            <button class="button-bold-text">More testimonials</button>
-        </div>
-        <div id="pricing">
-            <h2>Pricing</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <div>
-                <h3>Free</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>0</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                </ul>
-                <button class="button-bold-text">Order Now</button>
             </div>
             <div>
-                <h3>Standart</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>10</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                </ul>
-                <button class="button-bold-text">Order Now</button>
+                <h2>Testimonials</h2>
+                <img src="img/logos-ibm.png" alt="logos:ibm">
+                <h4>Most calendars are designed for teams</h4>
+                <img src="img/avatar.png" alt="avatar">
+                <h6>orginize across</h6>
+                <p><a href="#">Ui designer</a></p>
+                <button class="button-bold-text">More testimonials</button>
             </div>
-            <div>
-                <h3>Business</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>99</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                    <li>Pricing feature</li>
-                </ul>
-                <button class="button-bold-text">Order Now</button>
+            <div id="pricing">
+                <h2>Pricing</h2>
+                <h4>Most calendars are designed for teams</h4>
+                <div>
+                    <h3>Free</h3>
+                    <h6>Organize across all apps by hand</h6>
+                    <h1>0</h1>
+                    <h3>$</h3>
+                    <h6>Per Month</h6>
+                    <ul>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                    </ul>
+                    <button class="button-main-text">Order Now</button>
+                </div>
+                <div>
+                    <h3>Standart</h3>
+                    <h6>Organize across all apps by hand</h6>
+                    <h1>10</h1>
+                    <h3>$</h3>
+                    <h6>Per Month</h6>
+                    <ul>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                    </ul>
+                    <button class="button-main-text">Order Now</button>
+                </div>
+                <div>
+                    <h3>Business</h3>
+                    <h6>Organize across all apps by hand</h6>
+                    <h1>99</h1>
+                    <h3>$</h3>
+                    <h6>Per Month</h6>
+                    <ul>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                        <li>Pricing feature</li>
+                    </ul>
+                    <button class="button-main-text">Order Now</button>
+                </div>
             </div>
-        </div>
-        <div id="contact">
-            <h2>Contact us</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <button><img src="#" alt="twitter icon"></button>
-            <button><img src="#" alt="facebook icon"></button>
-            <button><img src="#" alt="linkedin icon"></button>
-            <p><img src="#" alt="map icon">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
-            <p><img src="#" alt="phone icon">(843) 555-0130</p>
-            <p><img src="#" alt="mail icon">willie.jennings@example.com</p>
-            <form>
-                <h6>Contact US</h6>
-                <p><input type="text" name="text" placeholder="Your Name"></p>
-                <p><input type="email" name="email" placeholder="Your Email" required></p>
-                <p><textarea name="messsage" cols="30" rows="5" placeholder="Your Message"></textarea></p>
-                <p><input type="submit" value="Send" class="button-bold-text"></p>
-            </form>
-        </div>
+            <div id="contact">
+                <h2>Contact us</h2>
+                <h4>Most calendars are designed for teams</h4>
+                <a href="#"><img class="header-figma__social-icon" src="img/tw-icon.svg" alt="Twitter"></a>
+                <a href="#"><img class="header-figma__social-icon" src="img/fb-icon.svg" alt="Facebook"></a>
+                <a href="#"><img class="header-figma__social-icon" src="img/ln-icon.svg" alt="Linkedin"></a>
+                <p><img src="img/map-icon.svg" alt="map icon">6386 Spring St undefined Anchorage, Georgia 12473 United
+                    States</p>
+                <p><img src="img/phone-icon.svg" alt="phone icon">(843) 555-0130</p>
+                <p><img src="img/mail-icon.svg" alt="mail icon">willie.jennings@example.com</p>
+                <form>
+                    <h6>Contact US</h6>
+                    <p><input type="text" name="text" placeholder="Your Name"></p>
+                    <p><input type="email" name="email" placeholder="Your Email" required></p>
+                    <p><textarea name="messsage" cols="30" rows="5" placeholder="Your Message"></textarea></p>
+                    <p><input type="submit" value="Send" class="button-main-text"></p>
+                </form>
+            </div>
     </main>
-    <footer>
-        <div>
-            <h3>Annette Steward</h3>
-            <p>Jennie Cooper</p>
-            <p>Julie Henry</p>
-            <p>Johnny Murphy</p>
-            <p>Gregory Mccoy</p>
-            <p>Marvin Mckinney</p>
+    <footer class="footer">
+        <div id="about" class="footer__about">
+            <div>
+                <h3>Annette Steward</h3>
+                <p>Jennie Cooper</p>
+                <p>Julie Henry</p>
+                <p>Johnny Murphy</p>
+                <p>Gregory Mccoy</p>
+                <p>Marvin Mckinney</p>
+            </div>
+            <div>
+                <h3>Annette Steward</h3>
+                <p>Jennie Cooper</p>
+                <p>Julie Henry</p>
+                <p>Johnny Murphy</p>
+                <p>Gregory Mccoy</p>
+                <p>Marvin Mckinney</p>
+            </div>
+            <div>
+                <h3>Annette Steward</h3>
+                <p>Jennie Cooper</p>
+                <p>Julie Henry</p>
+                <p>Johnny Murphy</p>
+                <p>Gregory Mccoy</p>
+                <p>Marvin Mckinney</p>
+            </div>
         </div>
         <div>
-            <h3>Annette Steward</h3>
-            <p>Jennie Cooper</p>
-            <p>Julie Henry</p>
-            <p>Johnny Murphy</p>
-            <p>Gregory Mccoy</p>
-            <p>Marvin Mckinney</p>
-        </div>
-        <div>
-            <h3>Annette Steward</h3>
-            <p>Jennie Cooper</p>
-            <p>Julie Henry</p>
-            <p>Johnny Murphy</p>
-            <p>Gregory Mccoy</p>
-            <p>Marvin Mckinney</p>
-        </div>
-        <div>
-            <p><img src="#" alt="map icon">7480 Mockingbird Hill undefined </p>
-            <p><img src="#" alt="phone icon">(239) 555-0108</p>
-            <button><img src="#" alt="twitter icon"></button>
-            <button><img src="#" alt="facebook icon"></button>
-            <button><img src="#" alt="linkedin icon"></button>
+            <p><img src="img/map-icon.svg" alt="map icon">7480 Mockingbird Hill undefined </p>
+            <p><img src="img/phone-icon.svg" alt="phone icon">(239) 555-0108</p>
+            <a href="#"><img class="header-figma__social-icon" src="img/tw-icon.svg" alt="Twitter"></a>
+            <a href="#"><img class="header-figma__social-icon" src="img/fb-icon.svg" alt="Facebook"></a>
+            <a href="#"><img class="header-figma__social-icon" src="img/ln-icon.svg" alt="Linkedin"></a>
         </div>
     </footer>
 </body>
