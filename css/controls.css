@@ -1,0 +1,25 @@
+
+.button-bold-text {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 35px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    height: 52px;
+    padding: 16px 0px;
+    width: 236px;   
+}
+
+.button-main-text {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    border-radius: 35px;
+    border-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 52px;
+    padding: 16px 0px;
+    width: 236px;
+}
