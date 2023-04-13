@@ -40,7 +40,14 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-
+.newsletter__form p {
+    font-size: 18px;
+    line-height: 25px;
+}
+.newsletter__image img {
+    width: 100%;
+    object-fit: contain;
+}
 
 @media (min-width: 500px) {
     .main-text__features {
@@ -51,11 +58,11 @@
         align-items: center;
         flex: 1;
         padding: 5rem;
-        order: -1;
-    }
+        }
     .main-text__features-item {
         max-width: 300px; 
     }
+    
     .call-to-action {
         display: flex;
         flex-direction: row;
@@ -72,5 +79,11 @@ text-align: left;
     .call-to-action__item button {
         justify-self: start;
     }
-
+    .newsletter {
+        display: grid;
+        grid-template-areas:
+        "newsletter__image newsletter__image newsletter__title" 
+        "newsletter__image newsletter__image newsletter__form" 
+        "newsletter__image newsletter__image newsletter__form";
+    }
     }
