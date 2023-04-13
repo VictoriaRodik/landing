@@ -1,0 +1,66 @@
+.header-figma {
+    background: url(../img/header-background.png);
+    background-size: cover;
+    background-position: center top;
+    min-height: 930px;
+}
+
+.header-figma__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header-figma__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-figma__menu-item {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--contrast-color);
+}
+
+.header-figma__main {
+    padding: 3rem;
+}
+
+.header-figma__button {
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.header-figma__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    color: var(--contrast-color);
+}
+
+.header-figma__title-text {
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--contrast-color);
+}
+
+@media (min-width: 500px) {
+
+    .header-figma__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+    }
+
+    .header-figma__logo-container {
+        order: 1;
+    }
+
+    .header-figma__title {
+        font-size: 74px;
+        line-height: 84px;
+    }
+}
