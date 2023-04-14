@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
@@ -38,8 +37,8 @@
             <button class="button-main-text">Try for Free</button>
         </div>
     </header>
-    <main>
-        <section id="product" class="main-text container">
+    <main class="container">
+        <section id="product" class="main-text">
             <h2 class="main-text__title">Features</h2>
             <p class="main-text__text">Most calendars are designed for teams</p>
             <div class="main-text__image">
@@ -48,17 +47,17 @@
             <div class="main-text__features">
                 <div class="main-text__features-item">
                     <img src="img/shapes-icon.svg" alt="Drawing">
-                    <h3>OpenType features Variable fonts</h3>
+                    <h3 class="main-text__title-low">OpenType features Variable fonts</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                 </div>
                 <div class="main-text__features-item">
                     <img src="img/pencil-icon.svg" alt="Draw">
-                    <h3>Design with real data</h3>
+                    <h3 class="main-text__title-low">Design with real data</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                 </div>
                 <div class="main-text__features-item">
                     <img src="img/brush-icon.svg" alt="Brush">
-                    <h3>Fastetst way to take action</h3>
+                    <h3 class="main-text__title-low">Fastetst way to take action</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
                 </div>
             </div>
@@ -76,20 +75,21 @@
         </section>
         <section class="newsletter">
             <div class="newsletter__title">
-                <h3>At your fingertips</h3>
+                <h3 class="main-text__title-low">At your fingertips</h3>
                 <h2 class="main-text__title">Newsletter</h2>
                 <p class="main-text__text">Most calendars are designed for teams</p>
-                <p class="main-text__text">Slate helps you see how many more days you need to work to reach your financial goal</p>
+                <p class="main-text__text">Slate helps you see how many more days you need to work to reach your
+                    financial goal</p>
             </div>
             <div class="newsletter__image">
                 <img src="img/newsletter.png" alt="Newsletter">
             </div>
             <div class="newsletter__form">
-                <h3>Subscribe to our newsletter</h3>
+                <h3 class="main-text__title-low">Subscribe to our newsletter</h3>
                 <p class="main-text__text">Available exclusivery on Figmaland</p>
                 <form class="subscription">
-                    <p><input type="email" name="email" placeholder="Your Email" class="input-text" required></p>
-                    <p><input type="submit" value="Subscribe" class="button-main-text"></p>
+                    <input type="email" name="email" placeholder="Your Email" class="input-text" required>
+                    <input type="submit" value="Subscribe" class="button-main-text">
                 </form>
             </div>
         </section>
@@ -119,19 +119,22 @@
                     <img src="img/logos-dropbox.png" alt="logos:dropbox">
                 </div>
             </div>
+            <div>
+                <button class="button-bold-text">Try for Free</button>
+            </div>
         </section>
-        <div>
-            <button class="button-bold-text">Try for Free</button>
-        </div>
-        <div>
-            <h2>Testimonials</h2>
+        <section class="testimonials">
+            <h2 class="main-text__title">Testimonials</h2>
             <img src="img/logos-ibm.png" alt="logos:ibm">
-            <h4>Most calendars are designed for teams</h4>
-            <img src="img/avatar.png" alt="avatar">
-            <h6>orginize across</h6>
-            <p><a href="#">Ui designer</a></p>
+            <p class="testimonials__text">Most calendars are designed for teams. Slate is designed for freelancers who
+                want a simple way to plan their schedule.</p>
+            <div class="testimonials__person">
+                <img src="img/avatar.png" alt="avatar">
+                <p class="testimonials__text">orginize across</p>
+             <a href="#">Ui designer</a>
+            </div>
             <button class="button-bold-text">More testimonials</button>
-        </div>
+        </section>
         <div id="pricing">
             <h2>Pricing</h2>
             <h4>Most calendars are designed for teams</h4>
@@ -195,7 +198,8 @@
                 <h6>Contact US</h6>
                 <p><input class="input-text" type="text" name="text" placeholder="Your Name"></p>
                 <p><input class="input-text" type="email" name="email" placeholder="Your Email" required></p>
-                <p><textarea class="input-text-area" name="messsage" cols="30" rows="5" placeholder="Your Message"></textarea></p>
+                <p><textarea class="input-text-area" name="messsage" cols="30" rows="5"
+                        placeholder="Your Message"></textarea></p>
                 <p><input type="submit" value="Send" class="button-main-text"></p>
             </form>
         </div>
