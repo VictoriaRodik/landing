@@ -13,7 +13,7 @@
 
 <body>
     <header id="home" class="header-figma">
-       <nav class="header-figma__nav container">
+        <nav class="header-figma__nav container">
             <div class="header-figma__logo-container">
                 <img src="img/figma-logo.svg" alt="Figma Land">
             </div>
@@ -24,7 +24,7 @@
                 <a href="#about" class="header-figma__menu-item">About</a>
                 <a href="#contact" class="header-figma__menu-item">Contacts</a>
             </div>
-                        <div class="header-figma__social">
+            <div class="header-figma__social">
                 <a href="#"><img class="header-figma__social-icon" src="img/tw-icon.svg" alt="Twitter"></a>
                 <a href="#"><img class="header-figma__social-icon" src="img/fb-icon.svg" alt="Facebook"></a>
                 <a href="#"><img class="header-figma__social-icon" src="img/ln-icon.svg" alt="Linkedin"></a>
@@ -130,20 +130,23 @@
             <div class="testimonials__person">
                 <img src="img/avatar.png" alt="avatar">
                 <p class="testimonials__text">orginize across</p>
-             <a href="#">Ui designer</a>
+                <a href="#">Ui designer</a>
             </div>
             <button class="button-bold-text">More testimonials</button>
         </section>
-        <div id="pricing">
-            <h2>Pricing</h2>
-            <h4>Most calendars are designed for teams</h4>
-            <div>
-                <h3>Free</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>0</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
+        <section id="pricing" class="price">
+            <h2 class="price__title">Pricing</h2>
+            <p class="price__text">Most calendars are designed for teams</p>
+            <div class="price__cards">
+            <div class="price__light">
+                <h3 class="price__card-title">Free</h3>
+                <p class="price__card-text">Organize across all apps by hand</p>
+                <div class="price__block">
+                    <p class="price__number">0</p>
+                    <p class="price__dollar">$</p>
+                    <p class="price__text-number">Per Month</p>
+                </div>
+                <ul class="price__feature">
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
@@ -152,13 +155,15 @@
                 </ul>
                 <button class="button-main-text">Order Now</button>
             </div>
-            <div>
-                <h3>Standart</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>10</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
+            <div class="price__contrast">
+                <h3 class="price__card-title">Standart</h3>
+                <p class="price__card-text">Organize across all apps by hand</p>
+                <div class="price__block">
+                    <p class="price__number">10</p>
+                    <p class="price__dollar">$</p>
+                    <p class="price__text-number">Per Month</p>
+                </div>
+                <ul class="price__feature">
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
@@ -167,13 +172,15 @@
                 </ul>
                 <button class="button-main-text">Order Now</button>
             </div>
-            <div>
-                <h3>Business</h3>
-                <h6>Organize across all apps by hand</h6>
-                <h1>99</h1>
-                <h3>$</h3>
-                <h6>Per Month</h6>
-                <ul>
+            <div class="price__light">
+                <h3 class="price__card-title">Business</h3>
+                <p class="price__card-text">Organize across all apps by hand</p>
+                <div class="price__block">
+                    <p class="price__number">99</p>
+                    <p class="price__dollar">$</p>
+                    <p class="price__text-number">Per Month</p>
+                </div>
+                <ul class="price__feature">
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
                     <li>Pricing feature</li>
@@ -182,7 +189,8 @@
                 </ul>
                 <button class="button-main-text">Order Now</button>
             </div>
-        </div>
+            </div>
+        </section>
         <div id="contact">
             <h2>Contact us</h2>
             <h4>Most calendars are designed for teams</h4>
