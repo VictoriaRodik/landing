@@ -111,7 +111,7 @@
     .price__cards {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrep;
+        flex-wrap: wrap;
         max-width: 1400px;
         gap: 3rem;
     }
