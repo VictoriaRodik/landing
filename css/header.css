@@ -11,11 +11,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    flex: 1;
 }
 
 .header-figma__menu {
     display: flex;
     flex-direction: column;
+}
+.header-figma__social {
+    display: none;
 }
 
 .header-figma__menu-item {
@@ -46,13 +50,22 @@
     color: var(--contrast-color);
 }
 
+
 @media (min-width: 500px) {
+    .header-figma__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+
+      }
 
     .header-figma__menu {
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        flex: 1;
+        justify-content: space-between;
+        flex: 0.5;
     }
 
     .header-figma__logo-container {
@@ -62,5 +75,10 @@
     .header-figma__title {
         font-size: 74px;
         line-height: 84px;
+    }
+    .header-figma__social {
+        display: flex;
+        flex-direction: row;
+        order: 1;
     }
 }
