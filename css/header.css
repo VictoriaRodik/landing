@@ -50,7 +50,63 @@
     color: var(--contrast-color);
 }
 
+.navigation-burger {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 16px;
+    position: relative;
+    cursor: pointer;
+    z-index: 22;
+}
 
+
+.navigation-burger::before {
+    background-color: var(--contrast-color);
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    content: " ";
+    top: 0px;
+}
+
+.navigation-burger::after {
+    background-color: var(--contrast-color);
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    content: " ";
+    top: 14px;
+}
+
+.navigation-burger span,
+.navigation-burger::after,
+.navigation-burger::before {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--contrast-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation-burger span {
+    transform: scale(1);
+}
+
+.navigation-burger.active span {
+    transform: scale(0);
+}
+
+.navigation-burger.active::before {
+    top: 7px;
+    transform: rotate(-225deg);
+}
+
+.navigation-burger.active::after {
+    top: 7px;
+    transform: rotate(225deg);
+}
 @media (min-width: 500px) {
     .header-figma__nav {
         display: flex;
@@ -81,213 +137,106 @@
         flex-direction: row;
         order: 1;
     }
-}
-@media (max-width: 990px) {
+}    
+@media (max-width: 992px) {
     body.lock {
-      overflow: hidden;
+        overflow: hidden;
     }
-    section div nav .header-figma__logo-container {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 0;
-      z-index: 10;
-    }
-    section div nav .navigation-burger {
-      display: block;
-      position: relative;
-      width: 30px;
-      height: 20px;
-      padding: 12px;
-      cursor: pointer;
-      z-index: 5;
-    }
-    section div nav .navigation-burger span,
-    section div nav .navigation-burger::before,
-    section div nav .navigation-burger::after {
-      position: absolute;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background-color: var(--banner-h-color);
-      transition: all 0.5s ease-in-out;
-    }
-    section div nav .navigation-burger span {
-      transform: scale(1);
-    }
-    section div nav .navigation-burger::before,
-    section div nav .navigation-burger::after {
-      content: " ";
-    }
-    section div nav .navigation-burger::before {
-      top: 0;
-    }
-    section div nav .navigation-burger::after {
-      bottom: 0;
-    }
-    section div nav .navigation-burger.active span {
-      transform: scale(0);
-    }
-    section div nav .navigation-burger.active::before {
-      top: 50%;
-      transform: rotate(-45deg);
-    }
-    section div nav .navigation-burger.active::after {
-      bottom: 40%;
-      transform: rotate(45deg);
-    }
-    header section div.container-section {
-      position: relative;
-    }
-    section div nav.header-figma__nav .header-figma__wrapper {
-      position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--light-text-color);
-      z-index: 2;
-      transition: top 0.3s ease-in;
-      padding: 15px 24px 50px 24px;
-      transition: top 0.3s ease-in 0.1s;
-      overflow: hidden;
-      margin: auto;
-    }
-  
-    section div nav.header-figma__nav .header-figma-wrapper.active {
-      top: 0;
-    }
-  
-    section div nav.header-figma__nav.active {
-      top: 0;
-    }
-    section div nav .header-figma__menu {
-      position: relative;
-      font-size: 0.92rem;
-      font-weight: 700;
-      line-height: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: auto;
-      z-index: 10;
-      padding-top: 100px;
-    }
-    body
-      > header
-      > section
-      > div
-      > nav
-      > div.header-figma__wrapper.active
-      > div.header-figma__menu
-      > a {
-      color: var(--nav-pages-color);
-      opacity: 0.8;
-    }
-    body
-      > header
-      > section
-      > div
-      > nav
-      > div.header-figma__wrapper.active
-      > div.header-figma__menu
-      > a:hover {
-      color: var(--button-black-color);
-    }
-  
-    section div nav .header-figma__menu a:hover {
-      color: var(--button-black-color);
-    }
-  
-    section div nav .header-figma-social {
-      position: relative;
-      min-width: 172px;
-      max-width: 200px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: auto;
-    }
-  
-    section div nav .header-figma-social img {
-      max-width: 28px;
-      border-radius: 0.4rem;
-    }
-  }
-  @media (min-width: 991px) {
+}
 
-    section div nav .navigation-burger {
-      display: none;
+@media (max-width: 992px) {
+    .header-figma__menu {
+        position: absolute;
+        left: -10000px;
     }
-  
-    section div nav .header-figma__menu-item,
-    .figma-menu-social {
-      display: flex;
+    
+    .header-figma__menu.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--btn-text);
+        z-index: 21;
+        margin: auto;
     }
-  
-    section div .header-figma__nav .figma-menu__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 75%;
+    
+    .header-figma__menu-item {
+        display: flex;
+        font-size: 17px;
+        margin: 6px 20px;
     }
-  
-    section div nav .header-figma__menu-item {
-      font-size: 0.92rem;
-      font-weight: 700;
-      color: var(--nav-pages-color);
-      min-width: 480px;
-      display: flex;
-      justify-content: space-around;
-      height: auto;
+
+    .header-figma__menu-item-hover:hover {
+        color: var(--accent-color);
+        position: relative;
+        background-color: var(--accent-color);
+        display: flex;
+        flex-direction: column-reverse;
+        top: 23.5px;
+        height: 2px;
+        width: 0%;
+        content: " ";
+        animation-name: underline-items;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+        margin-bottom: 23.5px;
     }
-    section div nav .header-figma__menu-item a {
-      position: relative;
-      font-size: 0.91rem;
-      color: var(--nav-pages-color);
-      font-weight: 700;
-      text-decoration: none;
-      line-height: 1.5rem;
+
+
+
+/*@media (min-width: 992px) {
+   
+    .header-figma__wrapper {
+        position: absolute;
+        left: -10000px;
     }
-    section div nav .header-figma__menu-item a:hover {
-      color: var(--button-black-color);
-      cursor: pointer;
+
+    .header__menu-conteiner {
+        position: relative;
+        left: 0px;
     }
-    section div nav .header-figma__menu-item a:after {
-      content: " ";
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 0;
-      height: 3px;
-      border-radius: 0.1rem;
-      background-color: var(--button-black-color);
-      transition: width 0.2s ease-in;
+
+    .header__menu {
+        display: flex;
+        margin: 0px -20px;
     }
-    section div nav .header-figma__menu-item a:hover:after {
-      width: 100%;
+
+    .header__menu-item {
+        display: flex;
+        font-size: 17px;
+        margin: 6px 20px;
     }
-    section div nav .figma-menu-social {
-      min-width: 172px;
-      display: flex;
-      justify-content: space-around;
+
+    .header__menu-item-hover:hover {
+        color: var(--subtitle-color);
+        position: relative;
     }
-  
-    section div nav .figma-menu-social img {
-      max-width: 28px;
-      border-radius: 0.4rem;
+
+    .header__menu-item-underline:hover {
+        background-color: var(--subtitle-color);
+        display: flex;
+        flex-direction: column-reverse;
+        top: 23.5px;
+        margin-bottom: 23.5px;
+        height: 2px;
+        width: 0%;
+        content: " ";
+        animation-name: underline-items;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        white-space: nowrap;
     }
-    section div nav .figma-menu-social a:hover {
-      max-width: 32px;
-      border: 1px solid var(--button-black-color);
-      border-radius: 0.2rem;
-      box-shadow: 0 0 2px var(--offer-jbl-color);
-      transform: scale(2);
-    }
-  }
+
+    @keyframes underline-items {
+        0% {}
+
+        100% {
+            width: 100%;
+        }
+    }*/
+} 
