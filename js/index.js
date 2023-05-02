@@ -1,1 +1,1 @@
-import('burger-menu.js');
+import(`./burger-menu.js`);
