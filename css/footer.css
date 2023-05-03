@@ -1,0 +1,47 @@
+.footer {
+    background-color: var(--backgrond-color);
+    color: var(--contrast-color);
+  }
+  
+  
+  
+  .footer__block {
+    margin: 2rem 1rem;
+    padding: 1rem;
+  }
+  
+  .footer__main-text,
+  .footer__text {
+    margin: 2rem auto;
+  }
+  
+  .footer__contacts {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    margin: 2rem auto;
+  }
+  
+  .footer__contacts img {
+    justify-self: end;
+      margin: 1rem;
+  }
+  
+  .footer__contacts p {
+    justify-self: start;
+      margin: 1rem;
+  }
+  
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__social a {
+    margin: 1rem;
+  }
+  @media (min-width: 500px) {
+    .footer__about {
+      display: flex;
+      flex-direction: row;
+    }
+  }
